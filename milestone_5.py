@@ -89,6 +89,11 @@ class Hangman:
 word_list = ['mango', 'stawberry','orange', 'apple', 'peach']
 
 def play_game(word_list):
+    '''
+    Iteratively ask the user for a letter until the user guesses the word or runs out of lives
+    If the user guesses the word, print "Congratulations! You won!"
+    If the user runs out of lives, print "You lost! The word was {word}"
+    '''
     num_lives = 5
     game = Hangman(word_list, num_lives)
     while True:
